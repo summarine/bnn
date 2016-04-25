@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet"  type="text/css" href="{% static 'forecasting/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        <div class="container">
+            <div class="header">
+            </div>
+            <div class="menu">
+               <h2 id="resource">Resource</h2>
+               <ul>
+                   <li>Data mining</li>
+                   <li ><a link https://github.com>Github</li>
+            </div>
+            <div class="content">
+                <p>Content</p>
+            </div>
+            <div class="footer">
+                <address >
+                   <br>
+                    Copyright @2016 Summer's BNN Analytics, All Rights Reserved.
+                   <br>
+                    Web Designed and written by Xia Xiaochan.
+                   <br>
+                    Email:xiaochan.xia@outlook.com
+                  </address>
+            </div>
+       </div>
+    </body>
+</html>
