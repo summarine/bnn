@@ -17,7 +17,11 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
+<<<<<<< HEAD
     url(r'^$',include('forecasting.urls')),
+=======
+    url(r'^forecasting/',include('forecasting.urls')),
+>>>>>>> c29b66588a02be6a5a8cc42c418e650f53ff8ecb
     url(r'^admin/',admin.site.urls),
 ]
 
