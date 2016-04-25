@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet"  type="text/css" href="{% static 'forecasting/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        <div class="container">
+            <div class="header">
+            </div>
+            <div class="menu">
+               <h2 id="resource">Resource</h2>
+               <ul>
+                   <li><a href="http://www.abbottanalytics.com">Abbott Analytics</a></li>
+                   <li ><a href="https://github.com">Github</a></li>
+                   <li ><a href="http://www.mozenda.com">Mozenda</a></li>
+                   <li ><a href="http://www.kaggle.com">Kaggle</a></li>
+            </div>
+            <div class="content">
+                <p>Forecasting</p>
+                <button>Choose your data</button>
+            </div>
+            <div class="footer">
+                <address>
+                   <br>
+                    Copyright @2016 BP Neural Nework Analytics Inc, All Rights Reserved.
+                   <br>
+                    Web Designed and written by Xia Xiaochan.
+                   <br>
+                    Email:xiaochan.xia@outlook.com
+                  </address>
+            </div>
+       </div>
+    </body>
+</html>
